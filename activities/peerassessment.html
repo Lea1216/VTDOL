@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+  <title></title>
+
+  <!-- d3 script -->
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+
+  <!-- Bootstrap Stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- google fonts  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">>
+
+  <!-- Font Awesome -->
+  <!-- <script
+        src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        data-auto-a11y="true"
+      ></script> -->
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script> -->
+  <!-- <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet"/> -->
+
+  <!-- Bootstrap Scripts -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <title></title>
+  <style>
+    body {
+      background-color: #FBFBFB;
+      font-family: Roboto;
+      font-weight: 300;
+      text-align: center;
+    }
+
+    .logo {
+      text-align: right;
+      padding-top: 8px;
+    }
+
+    .descImg {
+      padding: 50px;
+
+    }
+
+    .colmn1 {
+      text-align: center;
+      background-color: #3e989a;
+      padding: 30px;
+    }
+
+    .colmn2 {
+      background-color: #8cc1c2;
+      /* padding: 40px; */
+    }
+
+    /* .colmn3 {
+      background-color: #bedcdd;
+    } */
+
+    .cardRepetition {
+      background-color: #3e989a;
+      border-radius: 30px;
+      border-style: solid;
+      border-width: 2px;
+      border-color: #3e989a;
+      text-align: center;
+      padding: 7px;
+    }
+
+    .cardRep {
+      padding: 30px;
+    }
+
+    .headline1 {
+      font-weight: bold;
+    }
+
+
+    /* Carousel css */
+
+    .carousel-control-prev, .carousel-control-next {
+        position: inherit;
+        filter: invert(100%)
+    }
+
+    .card1 {
+      padding: 100px;
+      /* margin-right: 100px; */
+    }
+
+    .margin {
+      margin-bottom: 30px;
+    }
+
+    .white {
+      color: white;
+    }
+
+    .padding {
+      padding: 50px;
+      margin-top: 20px;
+    }
+
+    .explanation {
+      width: 70%;
+      margin: auto;
+    }
+
+    .steps {
+      text-align: left;
+    }
+
+  </style>
+</head>
+
+<body>
+  <section class="welcome">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6 colmn1">
+          <img src="pictures/peerassessment.png" alt="">
+        </div>
+        <div class="col-6 colmn2">
+          <div class="logo">
+            <img src="pictures/JPROV.png" alt="Logo">
+          </div>
+          <div class="white padding">
+            Peer evaluation or assessment refers to the many ways in which students can share their creative work with peers for constructive feedback, and then use this feedback to revise and improve their work.
+            The aim of the activity is to be in contact with other student projects, and enhance feedback opportunities. It also allows students to ask questions and interact with each other.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cardRep">
+    <div class="container cardRepetition">
+      <div class="row">
+        <div class="col-3">
+          <p class="headline1 white">Ressources</p>
+        </div>
+        <div class="col-3">
+          <p class="headline1 white">Individual Work</p>
+        </div>
+        <div class="col-3">
+          <p class="headline1 white">Team Work</p>
+        </div>
+        <div class="col-3">
+          <p class="headline1 white">Mode</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <p class="white">Computer/Tablet</p>
+        </div>
+        <div class="col-3">
+          <p class="white">Yes</p>
+        </div>
+        <div class="col-3">
+          <p class="white">Yes</p>
+        </div>
+        <div class="col-3">
+          <p class="white">Online & Offline</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="explanation">
+    <div class="container">
+          <h3 class="margin">Implementation</h3>
+      <div>
+        <p>The implementation of the activity can be done in two different ways</p>
+      </div>
+      <div class="row">
+        <p class="steps">1. Students create presentations and perform their final team presentations to the class (usually 4 students/team). After the presentation another group chosen by the teacher asks questions to the presenting team.</p>
+      </div>
+      <div class="row">
+        <p class="steps">2. Students submit their group projects and their peers are required to individually read others' group projects and provide structured feedback in an online discussion forum. Students must also react to the feedback comments that their own group projects received. This will prompt discussion about the project. </p>
+      </div>
+      </div>
+    </div>
+  </section>
+  <section class="explanation">
+    <br>
+    <div class="container">
+        <h3 class="margin">Facilitation Note</h3>
+      <div >
+        <p>The challenge with this activity is keeping with a rigid timeline, supporting quality feedback, and manage expectations.</p>
+      </div>
+    </div>
+  </section>
+  <br>
+  <section class="similarActivities">
+    <div class="container">
+        <h3>Discover activities with a similar group size</h3>
+        <div id="word-carousel" class="carousel slide d-flex justify-content-around align-items-center similar" data-ride="carousel" data-interval="false">
+          <a class="carousel-control-prev align-self-stretch" href="#word-carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+          </a>
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card1">
+                  <!-- <img src="pictures/StudentledQuestionnaire.png" alt=""> -->
+                  <a href="videoanalysis.html"><img src="pictures/videoanalysis.png" alt="videoanalysis" ></a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card1">
+                  <a href="groupformation.html"><img src="pictures/groupformation.png" alt="groupformation" ></a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card1">
+                  <a href="studentledquestionnaire.html"><img src="pictures/studentledquestionnaire.png" alt="peerassessment" ></a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card1">
+                  <a href="touchblue.html"><img src="pictures/touchblue.png" alt="touchblue" ></a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card1">
+                  <a href="appreciationcircle.html"><img src="pictures/appreciationcircle.png" alt="touchblue" ></a>
+                </div>
+              </div>
+          </div>
+          <a class="carousel-control-next align-self-stretch" href="#word-carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+          </a>
+      </div>
+  </section>
+</body>
+
+</html>

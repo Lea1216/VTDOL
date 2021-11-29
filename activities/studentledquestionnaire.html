@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+  <title></title>
+
+  <!-- d3 script -->
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+
+  <!-- Bootstrap Stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- google fonts  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <!-- <script
+        src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        data-auto-a11y="true"
+      ></script> -->
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script> -->
+  <!-- <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet"/> -->
+
+  <!-- Bootstrap Scripts -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <title></title>
+  <style>
+    body {
+      background-color: #FBFBFB;
+      font-family: Roboto;
+      font-weight: 300;
+      text-align: center;
+    }
+
+    .logo {
+      text-align: right;
+      padding-top: 8px;
+    }
+
+    .descImg {
+      padding: 50px;
+
+    }
+
+    .colmn1 {
+      text-align: center;
+      background-color: #3e989a;
+      padding: 30px;
+    }
+
+    .colmn2 {
+      background-color: #8cc1c2;
+      /* padding: 40px; */
+    }
+
+    /* .colmn3 {
+      background-color: #bedcdd;
+    } */
+
+    .cardRepetition {
+      background-color: #3e989a;
+      border-radius: 30px;
+      border-style: solid;
+      border-width: 2px;
+      border-color: #3e989a;
+      text-align: center;
+      padding: 7px;
+    }
+
+    .cardRep {
+      padding: 30px;
+    }
+
+    .headline {
+      font-weight: bold;
+    }
+
+    .headline1 {
+      font-weight: bold;
+    }
+
+    /* Carousel css */
+
+    .carousel-control-prev, .carousel-control-next {
+        position: inherit;
+        filter: invert(100%)
+    }
+
+    .card1 {
+      padding: 100px;
+      /* margin-right: 100px; */
+    }
+
+    .margin {
+      margin-bottom: 30px;
+    }
+
+    .white {
+      color: white;
+    }
+
+    .padding {
+      padding: 50px;
+      margin-top: 20px;
+    }
+
+    .explanation {
+      width: 70%;
+      margin: auto;
+    }
+
+    .steps {
+      text-align: left;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <section class="welcome">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6 colmn1">
+          <img src="pictures/studentledquestionnaire.png" alt="">
+        </div>
+        <div class="col-6 colmn2">
+          <div class="logo">
+            <img src="pictures/JPROV.png" alt="Logo">
+          </div>
+          <div class="white padding">
+            Students will create and share quizzes about course content so that it is possible for them to access a significant pool of questions, test their knowledge, access the justifications and, if needed, further engage on forum conversations. Objectives of the activity are firstly to provide students with automatic, specific and personal feedback during the course. In addition, students receive information on how to organize their studies. The feedback helps them to decide which topics need to be learned better and how they perform in comparison to their peers. This enables learning throughout the course. Another goal is also to give fundamental feedback to educators and thus enable them to continuously improve their teaching. Building quizzes and collaborating with fellow students is a key learning experience, promoting their critical thinking and pedagogic interest and skills.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cardRep">
+    <div class="container cardRepetition">
+      <div class="row">
+        <div class="col-3">
+          <p class="headline1 white">Ressources</p>
+        </div>
+        <div class="col-3">
+          <p class="headline1 white">Individual Work</p>
+        </div>
+        <div class="col-3">
+          <p class="headline1 white">Team Work</p>
+        </div>
+        <div class="col-3">
+          <p class="headline1 white">Mode</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <p class="white">Computer/Tablet, Moodle, Excel, R Routine</p>
+        </div>
+        <div class="col-3">
+          <p class="white">Yes</p>
+        </div>
+        <div class="col-3">
+          <p class="white">No</p>
+        </div>
+        <div class="col-3">
+          <p class="white">Online</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="explanation">
+    <div class="container">
+          <h3 class="margin">Implementation</h3>
+      <div class="row">
+        <p class="steps">1. Teachers will include an assignment for students to elaborate a set of questions for each lecture and relevant bibliographic material (e.g., mandatory readings). For instance, during a certain course, a student maybe assigned to build four
+          multiple choice questions for four lectures or chapters.</p>
+      </div>
+      <div class="row">
+        <p class="steps">2. Students will be given guidelines, including examples and pedagogic best-practices orientations for proposing the multiple-choice questions. These guidelines will also assure that the type of questions is diverse, and includes
+          memorization, concept explanation, concept discrimination, application, analogy, critical thinking, among other cognitive operations, as adequative for the lectures’ subjects. Along with the questions, students will also propose the
+          justifications for the correct and incorrect answers. </p>
+      </div>
+      <div class="row">
+        <p class="steps">3. The educator will review and validate the material proposed by students. A previous preparation work of identifying topics will assure that all relevant topics are included in the questions’ set. </p>
+      </div>
+      <div class="row">
+        <p class="steps">4. The validated questions sets is uploaded in a platform for quizzes (e.g. moodle) allowing student registration and access to random sets of questions, with automatic grading, immediate review after the submission and access to the
+          justifications. Each question will have a discussion forum, allowing the students-teachers clarification of further aspects and feedback for the questions and explanations themselves.</p>
+      </div>
+      <div class="row">
+        <p class="steps">5. According to each students’ profile of incorrect answers, an algorithm assigns an individual probability for certain type and domain of questions to reappear in future rounds.</p>
+      </div>
+      <div class="row">
+        <p class="steps">6. Besides the feedback to each student test, a report (automatic email) will be sent to each registered student with the topics with better and worse grades, along with the general evolution from peers, from round to round. The grades, number of rounds and progression will be compared with each students’ grades obtains in the course summative evaluations. A students’ online survey will also characterize the students
+          experience and allow improving the system.</p>
+      </div>
+    </div>
+  </section>
+  <section class="explanation">
+    <br>
+    <div class="container">
+        <h3 class="margin">Facilitation Note</h3>
+      <div class="row">
+        <p>Educators need to provide explanations and guidance to students and teachers and need to be ready to answer questions. Educators need to allocate time for reviewing the students quiz proposals and the quizzes need to be acquainted with the
+          moodle software.</p>
+      </div>
+    </div>
+  </section>
+  <br>
+  <section class="similarActivities">
+    <div class="container">
+        <h3>Discover activities with a similar group size</h3>
+        <div id="word-carousel" class="carousel slide d-flex justify-content-around align-items-center similar" data-ride="carousel" data-interval="false">
+          <a class="carousel-control-prev align-self-stretch" href="#word-carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+          </a>
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card1">
+                  <!-- <img src="pictures/StudentledQuestionnaire.png" alt=""> -->
+                  <a href="videoanalysis.html"><img src="pictures/videoanalysis.png" alt="videoanalysis" ></a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card1">
+                  <a href="groupformation.html"><img src="pictures/groupformation.png" alt="groupformation" ></a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card1">
+                  <a href="peerassessment.html"><img src="pictures/peerassessment.png" alt="peerassessment" ></a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card1">
+                  <a href="touchblue.html"><img src="pictures/touchblue.png" alt="touchblue" ></a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card1">
+                  <a href="appreciationcircle.html"><img src="pictures/appreciationcircle.png" alt="touchblue" ></a>
+                </div>
+              </div>
+          </div>
+          <a class="carousel-control-next align-self-stretch" href="#word-carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+          </a>
+      </div>
+  </section>
+</body>
+
+</html>
