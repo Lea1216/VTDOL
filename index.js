@@ -60,7 +60,8 @@
                         .call(d3.axisLeft(y_axis).tickFormat(function(d,i) { return data[i].activity }))
                         .selectAll("text")
                         .attr("class","y_axis")
-                        .on("click", function(d,i){window.open(data[i].url,"_blank")})
+                        .on("click", function(d,i){window.open(data[i].url,"_self")})
+                        //.on("click", function(d,i){window.open(data[i].url,"_blank")})
 
                   // Build color scale
                   var myColor = d3.scaleLinear()
