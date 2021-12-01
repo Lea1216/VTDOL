@@ -10,15 +10,23 @@
         //Read the data
         d3.csv("https://raw.githubusercontent.com/Lea1216/MasterThesis/main/heatmap.csv", function(data) {
 
+                var axis = d3.select("#my_dataviz")
+       .append("svg")
+       .attr("width", width + marginleft +marginright)
+       .attr("height",margintop +1)
+       // .style("position","fixed")
+       .append("g")
+       .attr("transform", "translate(" + marginleft + ", " + margintop + ")");
 
                   // append the svg object to the body of the page
                   var svg2 = d3.select("#my_dataviz")
+                  .append("div")
+                  .attr("class","chart")
                   .append("svg")
-                    .attr("width",width +marginleft + marginright)
-                    .attr("height",height+margintop + marginbottom)
-                    .append("g")
-                    .attr("transform",
-                          "translate(" + marginleft + "," + margintop + ")");
+                  .attr("width",width +marginleft + marginright)
+                  .attr("height",height + marginbottom)
+                  .append("g")
+                  .attr("transform", "translate(" + marginleft + ", 0)");
 
                    //Add customized legend
                       svg2.append("rect").attr('x', 450).attr('y', 5).attr('width', 20).attr('height', 20).attr('fill', '#3e989a').attr("class", "rect");
@@ -41,11 +49,12 @@
                     .padding(0.01);
 
 
-                var click_xaxis = svg2.append("g")
-                  .call(d3.axisTop(x_axis).tickFormat(function(d,i) { return data[i].taxonomy }))
+                var click_xaxis =
+                  axis.call(d3.axisTop(x_axis).tickFormat(function(d,i) { return data[i].taxonomy }))
                   .selectAll("text")
                   .style("text-anchor", "start")
-                  .attr("dx",10)
+                  .style("position","fixed")
+                  .attr("dx",15)
                   .attr("dy",5)
                   .attr("class","x_axis")
                   .attr("transform", "rotate(-65)")
